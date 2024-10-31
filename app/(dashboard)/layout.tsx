@@ -1,4 +1,5 @@
 import Menu from "@/components/Menu";
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,7 +25,10 @@ export default function DashboardLayout({
           <Menu />
         </div>
         {/* right */}
-        <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%]"></div>
+        <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] ">
+          <Navbar />
+          {children}
+        </div>
       </div>
   );
 }
